@@ -8,7 +8,7 @@ const questions = [
     type: "input",
     message: "What is the Title of your Repo?",
     name: "title",
-    default: "I do not know yet.",
+    default: "To be added",
   },
   {
     type: "list",
@@ -23,7 +23,7 @@ const questions = [
       "Boost Software License 1.0",
       "Creative Commons Zero v1.0 Universal",
       "Eclipse Public License 2.0",
-      "GNU Lesser General Public License v2.1",
+      "GNU Lesser General Public License v3.0",
       "Mozilla Public License 2.0",
       "The Unlicense",
       'NA'
@@ -47,9 +47,26 @@ const questions = [
   {
     type: "input",
     name: "usage",
-    message: "Provide instrucions and examples of use of this project",
+    message: "Provide instrucions and examples of use of this project?",
     default: "To be added",
+  },{
+    type: "input",
+    name: "credits",
+    message: "Do you have any collaborators to list?",
+    default: "To be added",
+  },{
+    type: "input",
+    name: "github",
+    message: "What is your github username",
+    default: "",
+  },{
+    type: "input",
+    name: "email",
+    message: "What is the best email to contact you",
+    default: "",
   },
+
+
 
   // 'Contribution guidelines?',
   // 'Test instructions?'
@@ -57,7 +74,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  fs.appendFile(fileName, data, function (err) {
+  fs.writeFile(fileName, data, function (err) {
     if (err) throw err;
     console.log("File Created");
   });
