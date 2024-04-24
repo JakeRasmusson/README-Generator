@@ -49,10 +49,9 @@ const licenseChoices = {
   },
 }
 function renderLicenseBadge(license) {
-  if (license in licenseChoices) {
-  return `[![License](${licenseChoices[license].licenseBadge})](${licenseChoices[license].licenseLink})`
-  } 
-  return ''
+  return license in licenseChoices 
+  ?`[![License](${licenseChoices[license].licenseBadge})](${licenseChoices[license].licenseLink})`
+  : ''
 }
 
 // TODO: Create a function that returns the license link
@@ -135,4 +134,4 @@ If you have any questions please contact me below.
 return markDown;
 }
 
-module.exports = generateMarkdown;
+module.exports = {generateMarkdown, licenseChoices};
