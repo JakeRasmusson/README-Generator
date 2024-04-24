@@ -1,6 +1,7 @@
-# sadfasdfasdfasdfsadf
+
+  # To be added
   
-[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
+
 ## Description
   
 To be added
@@ -26,10 +27,6 @@ To be added
 To be added
 
 
-  ## License
-
-  This project has the Boost Software License 1.0 applied to it
-  
 
 ## Questions
 
