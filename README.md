@@ -1,7 +1,7 @@
 
   # To be added
   
-
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 ## Description
   
 To be added
@@ -13,6 +13,7 @@ To be added
 - [Usage](#usage)
 - [Credits](#credits)
 - [Questions](#questions)
+- [License](#license)
 
 ## Installation
   
@@ -27,6 +28,10 @@ To be added
 To be added
 
 
+## License
+
+This project has the Apache License 2.0 applied to it
+  
 
 ## Questions
 
