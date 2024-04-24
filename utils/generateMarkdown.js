@@ -87,6 +87,7 @@ function generateMarkdown(data) {
     description,
     installation,
     usage,
+    testcase,
     credits,
     github,
     email }
@@ -122,6 +123,10 @@ ${usage}
 ${credits}
 
 ${renderLicenseSection(license)}
+
+## Test
+
+${testcase}
 
 ## Questions
 

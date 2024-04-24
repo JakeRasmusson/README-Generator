@@ -38,6 +38,11 @@ const questions = [
     default: "To be added",
   },{
     type: "input",
+    name: "testcase",
+    message: "What did you do to test this project?",
+    default: "To be added",
+  },{
+    type: "input",
     name: "credits",
     message: "Do you have any collaborators to list?",
     default: "To be added",
