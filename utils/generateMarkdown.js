@@ -1,6 +1,3 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-
 //Dictionary storing license url links
 const licenseChoices = {
   "Apache License 2.0": {
@@ -48,14 +45,15 @@ const licenseChoices = {
       licenseLink : 'http://unlicense.org/'
   },
 }
+
+//Takes in license answer and matches with dictionary choices returns license badge slug
 function renderLicenseBadge(license) {
   return license in licenseChoices 
   ?`[![License](${licenseChoices[license].licenseBadge})](${licenseChoices[license].licenseLink})`
   : ''
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+//Renders license section in table of contents if no license return blank
 function renderLicenseLink(license) {
 if (license !== 'NA') {
   return `- [License](#license)`
@@ -63,8 +61,7 @@ if (license !== 'NA') {
 return ""
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+//Renders license section in readme if no license return blank
 function renderLicenseSection(license) {
   if (license == "NA") {
     return "";

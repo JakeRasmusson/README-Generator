@@ -1,8 +1,10 @@
-// TODO: Include packages needed for this application
+//Packages needed to run application
 const inquirer = require("./node_modules/inquirer");
 const fs = require("fs");
+//Importing license choices and the generate markdown function that will create the markdown text
 const {generateMarkdown, licenseChoices} = require("./utils/generateMarkdown");
-// TODO: Create an array of questions for user input
+
+//Array of questions for Inquirer to prompt
 const questions = [
   {
     type: "input",
@@ -55,7 +57,14 @@ const questions = [
     type: "input",
     name: "email",
     message: "What is the best email to contact you",
-    default: "",
+    validate: function(input){
+      if (input.includes("@")) {
+        return true
+      } else {
+        return false
+      }
+
+    }
   },
 
 
@@ -76,7 +85,7 @@ function writeToFile(fileName, data) {
 function init() {
   inquirer.prompt(questions).then((answers) => {
     const markDown = generateMarkdown(answers);
-    writeToFile("Readme.md", markDown)
+    writeToFile("Readmes\\Readme.md", markDown)
   });
 //   writeToFile("filename", "data");
 }
