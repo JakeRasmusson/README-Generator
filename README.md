@@ -12,6 +12,10 @@ To install this application start by downloading the files from the Github repos
   
 ## Usage
 
+Here's a quick video demonstration on how to use the app.  Otherwise enjoy the step by step instructions below.
+
+[Video](https://drive.google.com/file/d/1P_GkuKPTlY7eSUNznlC73I1PbsaIAreU/view?usp=sharing)
+
 1. Open the repository in Visual Studio Code.
 
 
